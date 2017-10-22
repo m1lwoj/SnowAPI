@@ -51,17 +51,5 @@ namespace SnowTests.Unit.Validators
             validator.ShouldHaveValidationErrorFor(model => model.Code, "125");
             validator.ShouldNotHaveValidationErrorFor(model => model.Code, "1234");
         }
-
-        [Fact]
-        public void RoutesInRangeRequestModelValidatorValidResult()
-        {
-        //    var validator = new RoutesInRangeRequestModelValidator();
-        //    validator.ShouldHaveChildValidator(model => model.Kilometers, (System.Int32)0);
-        //    validator.ShouldNotHaveValidationErrorFor(model => model.Kilometers, (int)10);
-        //    validator.ShouldHaveValidationErrorFor(model => model.Point, (GeoPoint)null);
-        //    validator.ShouldHaveValidationErrorFor(model => model.Point.Latitude, (double?)null);
-        //    validator.ShouldHaveValidationErrorFor(model => model.Point.Longitude, (double?)null);
-        //    validator.ShouldNotHaveValidationErrorFor(model => model.Point, new GeoPoint() { Latitude = 2.0d, Longitude = 3.0d }) ;
-        }
     }
 }
