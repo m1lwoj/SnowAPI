@@ -39,7 +39,6 @@ namespace SnowBLL.Service.Concrete
 
         #region Public Methods
 
-        //TODO API-19 validation of models 
         public async Task<Result<AuthorizeResponseModel>> Authorize(ApplicationUserModel model)
         {
             try
