@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Class Library</Description>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <AssemblyName>SnowBLL</AssemblyName>
+    <PackageId>SnowBLL</PackageId>
+    <PackageTargetFallback>$(PackageTargetFallback);dotnet5.6;dnxcore50;portable-net45+win8</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SnowDAL\SnowDAL.csproj" />
+    <ProjectReference Include="..\EmailSender\EmailSender.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Data" Version="1.0.0-beta1" />
+    <PackageReference Include="FluentValidation" Version="6.2.1-beta1" />
+    <PackageReference Include="System.Security.Claims" Version="4.0.1" />
+    <PackageReference Include="System.Private.ServiceModel" Version="4.1.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="5.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation" Version="1.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.0.3" />
+  </ItemGroup>
+
+</Project>
