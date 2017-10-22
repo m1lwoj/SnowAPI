@@ -33,10 +33,8 @@ namespace SnowDAL.DBModels
         [Column("status")]
         public int Status { get; set; }
 
-        //TODO dodac sprawdzanie czy jest confirmed w niektórych akcjach
         [Column("isconfirmed")]
         public bool IsConfirmed { get; set; }
-
 
         public virtual ICollection<RouteInfoEntity> Routes { get; set; }
         public virtual ICollection<SystemCodeEntity> SystemCodes { get; set; }
